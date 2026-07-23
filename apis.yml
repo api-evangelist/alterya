@@ -1,22 +1,70 @@
 aid: alterya
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/alterya.png
 name: Alterya
-description: Alterya is a company surfaced as a portfolio company of battery-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Alterya is an AI-powered fraud-prevention company founded in 2022 (Y Combinator; seed round
+  led by Battery Ventures, ~$9.8M) that detects authorized-fraud scams — authorized push-payment
+  (APP) scams, pig-butchering and romance scams, money-mule and synthetic accounts, and
+  social-engineering-driven withdrawals — before victims send funds. It connects fraud signals
+  across crypto rails and traditional fiat/bank rails, and prior to acquisition monitored more
+  than $8B in transactions per month for exchanges and fintechs including Binance, Coinbase, and
+  Block, protecting roughly 100M end users. Chainalysis acquired Alterya in January 2025 for a
+  reported ~$150M; it now ships as the "Alterya by Chainalysis" fraud-prevention product. The
+  standalone alterya.com domain is parked and the company operates entirely inside Chainalysis,
+  with no independent public developer portal, API, or OpenAPI surface.
 url: https://raw.githubusercontent.com/api-evangelist/alterya/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - battery-ventures
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: acquired-no-api-surface
+x-founded: '2022'
+x-accelerator: y-combinator
+x-acquired-by: chainalysis
+x-acquired-date: '2025-01'
+x-acquired-amount-usd: 150000000
+x-status: acquired
+x-domain-status: parked
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Fraud Prevention
+- Fraud Detection
+- Cryptocurrency
+- Blockchain
+- Financial Services
+- Fintech
+- Artificial Intelligence
+- Security
 apis: []
+common:
+- type: Product
+  name: Alterya by Chainalysis (product)
+  url: https://www.chainalysis.com/product/alterya/
+- type: About
+  name: Chainalysis acquisition announcement
+  url: https://www.chainalysis.com/blog/chainalysis-alterya-announcement/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
